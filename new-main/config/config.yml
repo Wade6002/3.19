@@ -1,0 +1,38 @@
+# ==== 修改配置文件：config/config.yml ====
+event_hubs:
+  - name: "eh1"
+    connection_str: "Endpoint=sb://localhost;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SAS_KEY_VALUE;UseDevelopmentEmulator=true;"
+    consumer_group: "cg1"
+    partitions: 2
+    local_checkpoint_dir: "./checkpoints/iot-events"  # 新增本地存储路径
+
+
+
+
+log_processing:  # 新增模块
+  attribute_value_length_limit: 250
+  content_length_limit: 8192
+  content_truncated_mark: "[TRUNCATED]"
+
+
+# config.yml
+dynatrace:
+  base_url: "https://rzw34582.live.dynatrace.com"
+  api_token: "dt0c01.GGTV2AE5OJTONHMDE4IIVCIE.64LYD5CCN6PVQRB3IZC6XJMLO6NWPNEWFHNDP3AAPPJGAVWCOXPPWWG6ECHZ3BLV"
+  log_ingest_endpoint: "/api/v2/logs/ingest"
+security:
+  ssl:
+    verify_certificate: 
+
+performance:
+  http:
+    timeout: 10
+    concurrency: 5
+    max_retries: 3
+  compression:
+    gzip_level: 6
+    min_compress_size: 1024
+
+log_ingestion:
+  max_request_size: 4718592  # 4.5MB
+  max_events_per_request: 5000

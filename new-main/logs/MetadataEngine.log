@@ -1,0 +1,5 @@
+2025-03-17 14:47:19,444 - MainProcess - ERROR - Config loading failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/processor/sub/metadata_engine.py", line 149, in _load_configs
+    self.default_rule = self._create_config_rule(config)
+TypeError: _create_config_rule() missing 1 required positional argument: 'rule_def'

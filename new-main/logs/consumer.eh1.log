@@ -1,0 +1,220 @@
+2025-03-16 23:21:00,894 - PartitionProcess-1 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/eventhub_consumer.py", line 52, in process_message
+    "body": event.body_as_str(encoding="UTF-8"),
+TypeError: 'generator' object is not callable
+2025-03-16 23:21:00,898 - PartitionProcess-1 - ERROR - Processing failed: Event processing failed
+2025-03-16 23:21:00,923 - PartitionProcess-2 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/eventhub_consumer.py", line 52, in process_message
+    "body": event.body_as_str(encoding="UTF-8"),
+TypeError: 'generator' object is not callable
+2025-03-16 23:21:00,925 - PartitionProcess-2 - ERROR - Processing failed: Event processing failed
+2025-03-16 23:21:00,945 - PartitionProcess-1 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/eventhub_consumer.py", line 52, in process_message
+    "body": event.body_as_str(encoding="UTF-8"),
+TypeError: 'generator' object is not callable
+2025-03-16 23:21:00,945 - PartitionProcess-1 - ERROR - Processing failed: Event processing failed
+2025-03-16 23:21:00,976 - PartitionProcess-2 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/eventhub_consumer.py", line 52, in process_message
+    "body": event.body_as_str(encoding="UTF-8"),
+TypeError: 'generator' object is not callable
+2025-03-16 23:21:00,976 - PartitionProcess-2 - ERROR - Processing failed: Event processing failed
+2025-03-17 06:08:15,057 - PartitionProcess-2 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event_data)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 14, in process
+    len(logs_to_be_sent_to_dt),
+NameError: name 'logs_to_be_sent_to_dt' is not defined
+2025-03-17 06:08:15,061 - PartitionProcess-2 - ERROR - Processing failed: Event processing failed
+2025-03-17 06:08:15,058 - PartitionProcess-1 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event_data)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 14, in process
+    len(logs_to_be_sent_to_dt),
+NameError: name 'logs_to_be_sent_to_dt' is not defined
+2025-03-17 06:08:15,062 - PartitionProcess-1 - ERROR - Processing failed: Event processing failed
+2025-03-17 06:08:16,042 - PartitionProcess-1 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event_data)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 14, in process
+    len(logs_to_be_sent_to_dt),
+NameError: name 'logs_to_be_sent_to_dt' is not defined
+2025-03-17 06:08:16,042 - PartitionProcess-2 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event_data)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 14, in process
+    len(logs_to_be_sent_to_dt),
+NameError: name 'logs_to_be_sent_to_dt' is not defined
+2025-03-17 06:08:16,043 - PartitionProcess-1 - ERROR - Processing failed: Event processing failed
+2025-03-17 06:08:16,043 - PartitionProcess-2 - ERROR - Processing failed: Event processing failed
+2025-03-17 06:08:45,386 - PartitionProcess-1 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event_data)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 14, in process
+    len(logs_to_be_sent_to_dt),
+NameError: name 'logs_to_be_sent_to_dt' is not defined
+2025-03-17 06:08:45,386 - PartitionProcess-1 - ERROR - Processing failed: Event processing failed
+2025-03-17 06:08:45,989 - PartitionProcess-2 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event_data)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 14, in process
+    len(logs_to_be_sent_to_dt),
+NameError: name 'logs_to_be_sent_to_dt' is not defined
+2025-03-17 06:08:45,990 - PartitionProcess-2 - ERROR - Processing failed: Event processing failed
+2025-03-17 06:08:46,045 - PartitionProcess-1 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event_data)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 14, in process
+    len(logs_to_be_sent_to_dt),
+NameError: name 'logs_to_be_sent_to_dt' is not defined
+2025-03-17 06:08:46,046 - PartitionProcess-1 - ERROR - Processing failed: Event processing failed
+2025-03-17 06:08:46,500 - PartitionProcess-2 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event_data)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 14, in process
+    len(logs_to_be_sent_to_dt),
+NameError: name 'logs_to_be_sent_to_dt' is not defined
+2025-03-17 06:08:46,501 - PartitionProcess-2 - ERROR - Processing failed: Event processing failed
+2025-03-17 06:09:19,695 - PartitionProcess-1 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event_data)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 14, in process
+    len(logs_to_be_sent_to_dt),
+NameError: name 'logs_to_be_sent_to_dt' is not defined
+2025-03-17 06:09:19,696 - PartitionProcess-1 - ERROR - Processing failed: Event processing failed
+2025-03-17 06:09:20,767 - PartitionProcess-1 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event_data)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 14, in process
+    len(logs_to_be_sent_to_dt),
+NameError: name 'logs_to_be_sent_to_dt' is not defined
+2025-03-17 06:09:20,767 - PartitionProcess-1 - ERROR - Processing failed: Event processing failed
+2025-03-17 06:09:21,435 - PartitionProcess-2 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event_data)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 14, in process
+    len(logs_to_be_sent_to_dt),
+NameError: name 'logs_to_be_sent_to_dt' is not defined
+2025-03-17 06:09:21,436 - PartitionProcess-2 - ERROR - Processing failed: Event processing failed
+2025-03-17 06:09:22,873 - PartitionProcess-2 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event_data)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 14, in process
+    len(logs_to_be_sent_to_dt),
+NameError: name 'logs_to_be_sent_to_dt' is not defined
+2025-03-17 06:09:22,874 - PartitionProcess-2 - ERROR - Processing failed: Event processing failed
+2025-03-17 06:09:51,653 - PartitionProcess-1 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event_data)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 14, in process
+    len(logs_to_be_sent_to_dt),
+NameError: name 'logs_to_be_sent_to_dt' is not defined
+2025-03-17 06:09:51,654 - PartitionProcess-1 - ERROR - Processing failed: Event processing failed
+2025-03-17 06:09:51,677 - PartitionProcess-2 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event_data)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 14, in process
+    len(logs_to_be_sent_to_dt),
+NameError: name 'logs_to_be_sent_to_dt' is not defined
+2025-03-17 06:09:51,678 - PartitionProcess-2 - ERROR - Processing failed: Event processing failed
+2025-03-17 06:09:52,694 - PartitionProcess-2 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event_data)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 14, in process
+    len(logs_to_be_sent_to_dt),
+NameError: name 'logs_to_be_sent_to_dt' is not defined
+2025-03-17 06:09:52,694 - PartitionProcess-2 - ERROR - Processing failed: Event processing failed
+2025-03-17 06:09:52,720 - PartitionProcess-1 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event_data)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 14, in process
+    len(logs_to_be_sent_to_dt),
+NameError: name 'logs_to_be_sent_to_dt' is not defined
+2025-03-17 06:09:52,720 - PartitionProcess-1 - ERROR - Processing failed: Event processing failed
+2025-03-17 07:47:14,295 - PartitionProcess-1 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 20, in process
+    len(logs),
+NameError: name 'logs' is not defined
+2025-03-17 07:47:14,297 - PartitionProcess-1 - ERROR - Processing failed: Event processing failed
+2025-03-17 07:47:14,297 - PartitionProcess-2 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 20, in process
+    len(logs),
+NameError: name 'logs' is not defined
+2025-03-17 07:47:14,298 - PartitionProcess-2 - ERROR - Processing failed: Event processing failed
+2025-03-17 07:47:21,520 - PartitionProcess-1 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 20, in process
+    len(logs),
+NameError: name 'logs' is not defined
+2025-03-17 07:47:21,520 - PartitionProcess-1 - ERROR - Processing failed: Event processing failed
+2025-03-17 07:47:21,520 - PartitionProcess-2 - ERROR - Event processing failed
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new/src/services/eventhub_consumer.py", line 61, in process_message
+    await self.processor.process(partition_context, event)
+  File "/Users/mac-wade/Desktop/new/src/processor/custom_processor.py", line 20, in process
+    len(logs),
+NameError: name 'logs' is not defined
+2025-03-17 07:47:21,521 - PartitionProcess-2 - ERROR - Processing failed: Event processing failed
+2025-03-19 07:07:06,644 - PartitionProcess-1 - INFO - Consumer started for eh1
+2025-03-19 07:07:06,645 - PartitionProcess-1 - INFO - Graceful shutdown initiated
+2025-03-19 07:07:07,175 - PartitionProcess-2 - INFO - Consumer started for eh1
+2025-03-19 07:07:07,175 - PartitionProcess-2 - INFO - Graceful shutdown initiated
+2025-03-19 07:09:39,314 - PartitionProcess-1 - INFO - Consumer started for eh1
+2025-03-19 07:09:39,315 - PartitionProcess-1 - INFO - Graceful shutdown initiated
+2025-03-19 07:09:39,315 - PartitionProcess-1 - INFO - Client connection closed
+2025-03-19 07:09:39,315 - PartitionProcess-1 - ERROR - Error closing processor
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new-main/src/services/eventhub_consumer.py", line 100, in run
+    await self.client.receive(
+TypeError: receive() got an unexpected keyword argument 'prefetch_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new-main/src/services/eventhub_consumer.py", line 138, in graceful_shutdown
+    await self.processor.close()
+AttributeError: 'CustomProcessor' object has no attribute 'close'
+2025-03-19 07:09:39,822 - PartitionProcess-2 - INFO - Consumer started for eh1
+2025-03-19 07:09:39,822 - PartitionProcess-2 - INFO - Graceful shutdown initiated
+2025-03-19 07:09:39,822 - PartitionProcess-2 - INFO - Client connection closed
+2025-03-19 07:09:39,822 - PartitionProcess-2 - ERROR - Error closing processor
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new-main/src/services/eventhub_consumer.py", line 100, in run
+    await self.client.receive(
+TypeError: receive() got an unexpected keyword argument 'prefetch_count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new-main/src/services/eventhub_consumer.py", line 138, in graceful_shutdown
+    await self.processor.close()
+AttributeError: 'CustomProcessor' object has no attribute 'close'
+2025-03-19 07:19:49,470 - PartitionProcess-1 - INFO - Consumer started for eh1
+2025-03-19 07:19:50,010 - PartitionProcess-2 - INFO - Consumer started for eh1

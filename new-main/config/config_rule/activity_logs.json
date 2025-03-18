@@ -1,0 +1,138 @@
+{
+  "name": "cloud:azure:activity_log",
+  "displayName": "Azure Activity Log",
+  "rules": [
+    {
+      "sources": [
+        {
+          "sourceType": "logs",
+          "source": "category",
+          "condition": "$eq('Alert')"
+        }
+      ],
+      "attributes": [
+        {
+          "key": "timestamp",
+          "pattern": "time"
+        },
+        {
+          "key": "log.source",
+          "pattern": "join('', ['Activity Log - ', category])"
+        },
+        {
+          "key": "content",
+          "pattern": "@"
+        },
+        {
+          "key": "audit.action",
+          "pattern": "operationName"
+        },
+        {
+          "key": "audit.result",
+          "pattern": "replace_regex(resultType,'(.*)\\.$','$1') || resultType"
+        }
+      ]
+    },
+    {
+      "sources": [
+        {
+          "sourceType": "logs",
+          "source": "category",
+          "condition": "$eq('Administrative')"
+        }
+      ],
+      "attributes": [
+        {
+          "key": "timestamp",
+          "pattern": "time"
+        },
+        {
+          "key": "log.source",
+          "pattern": "join('', ['Activity Log - ', category])"
+        },
+        {
+          "key": "content",
+          "pattern": "@"
+        },
+        {
+          "key": "audit.identity",
+          "pattern": "identity.claims.\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name\""
+        },
+        {
+          "key": "audit.action",
+          "pattern": "operationName"
+        },
+        {
+          "key": "audit.result",
+          "pattern": "replace_regex(resultSignature,'(.*)\\.$','$1') || resultSignature"
+        }
+      ]
+    },
+    {
+      "sources": [
+        {
+          "sourceType": "logs",
+          "source": "category",
+          "condition": "$eq('ResourceHealth')"
+        }
+      ],
+      "attributes": [
+        {
+          "key": "timestamp",
+          "pattern": "time"
+        },
+        {
+          "key": "log.source",
+          "pattern": "join('', ['Activity Log - ', category])"
+        },
+        {
+          "key": "content",
+          "pattern": "@"
+        },
+        {
+          "key": "audit.action",
+          "pattern": "operationName"
+        },
+        {
+          "key": "audit.result",
+          "pattern": "replace_regex(resultType,'(.*)\\.$','$1') || resultType"
+        }
+      ]
+    },
+    {
+      "sources": [
+        {
+          "sourceType": "logs",
+          "source": "category",
+          "condition": "$eq('Policy')"
+        }
+      ],
+      "attributes": [
+        {
+          "key": "timestamp",
+          "pattern": "time"
+        },
+        {
+          "key": "log.source",
+          "pattern": "join('', ['Activity Log - ', category])"
+        },
+        {
+          "key": "content",
+          "pattern": "@"
+        },
+        {
+          "key": "audit.identity",
+          "pattern": "\"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name\""
+        },
+        {
+          "key": "audit.action",
+          "pattern": "operationName"
+        },
+        {
+          "key": "audit.result",
+          "pattern": "replace_regex(resultSignature,'(.*)\\.$','$1') || resultSignature"
+        }
+      ]
+    }
+  ]
+}

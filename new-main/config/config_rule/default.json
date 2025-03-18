@@ -1,0 +1,35 @@
+{
+  "name": "default",
+  "displayName": "Default",
+  "rules": [
+    {
+      "sources": [],
+      "attributes": [
+        {
+          "key": "cloud.region",
+          "pattern": "location"
+        },
+        {
+          "key": "timestamp",
+          "pattern": "time"
+        },
+        {
+          "key": "log.source",
+          "pattern": "if(properties.eventCategory == null, &category, &(join('', ['Activity Log - ', category])), @)"
+        },
+        {
+          "key": "content",
+          "pattern": "@"
+        },
+        {
+          "key": "audit.action",
+          "pattern": "if(properties.eventCategory, &operationName, &null, @)"
+        },
+        {
+          "key": "audit.result",
+          "pattern": "if(properties.eventCategory, &(replace_regex(resultType,'(.*)\\.$','$1') || resultType), &null, @)"
+        }
+      ]
+    }
+  ]
+}

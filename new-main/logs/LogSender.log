@@ -1,0 +1,314 @@
+2025-03-19 05:36:50,902 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 05:37:46,978 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 05:38:24,158 - MainProcess - CRITICAL - Fatal error in log sending
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 46, in send
+    batches = list(self._prepare_batches(logs))
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 71, in _prepare_batches
+    max_size = self.config.log_ingestion.max_request_size
+AttributeError: 'dict' object has no attribute 'log_ingestion'
+2025-03-19 05:38:49,532 - MainProcess - CRITICAL - Fatal error in log sending
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 46, in send
+    batches = list(self._prepare_batches(logs))
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 71, in _prepare_batches
+    max_size = self.config.log_ingestion.max_request_size
+AttributeError: 'dict' object has no attribute 'log_ingestion'
+2025-03-19 05:38:54,873 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 05:43:18,204 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 06:20:24,440 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 06:21:02,667 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 06:22:01,271 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 06:22:48,273 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 06:26:16,149 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 06:27:12,423 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 06:27:47,191 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 06:30:25,857 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 06:30:34,087 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 06:30:53,584 - MainProcess - ERROR - Final retry failed for batch
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 115, in _process_batch
+    return await self._send_batch(session, batch)
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 135, in _send_batch
+    compressed = self._compress_data(batch.serialized_batch)
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 168, in _compress_data
+    compresslevel=self.config.performance.compression.gzip_level
+AttributeError: 'dict' object has no attribute 'performance'
+2025-03-19 06:31:00,395 - MainProcess - ERROR - Final retry failed for batch
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 115, in _process_batch
+    return await self._send_batch(session, batch)
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 135, in _send_batch
+    compressed = self._compress_data(batch.serialized_batch)
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 168, in _compress_data
+    compresslevel=self.config.performance.compression.gzip_level
+AttributeError: 'dict' object has no attribute 'performance'
+2025-03-19 06:31:05,157 - MainProcess - ERROR - Final retry failed for batch
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 115, in _process_batch
+    return await self._send_batch(session, batch)
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 135, in _send_batch
+    compressed = self._compress_data(batch.serialized_batch)
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 168, in _compress_data
+    compresslevel=self.config.performance.compression.gzip_level
+AttributeError: 'dict' object has no attribute 'performance'
+2025-03-19 06:31:10,408 - MainProcess - ERROR - Final retry failed for batch
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 115, in _process_batch
+    return await self._send_batch(session, batch)
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 135, in _send_batch
+    compressed = self._compress_data(batch.serialized_batch)
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 168, in _compress_data
+    compresslevel=self.config.performance.compression.gzip_level
+AttributeError: 'dict' object has no attribute 'performance'
+2025-03-19 06:31:32,628 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 06:31:54,774 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 06:32:02,039 - MainProcess - ERROR - Final retry failed for batch
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 115, in _process_batch
+    return await self._send_batch(session, batch)
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 135, in _send_batch
+    compressed = self._compress_data(batch.serialized_batch)
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 168, in _compress_data
+    compresslevel=self.config.performance.compression.gzip_level
+AttributeError: 'dict' object has no attribute 'performance'
+2025-03-19 06:34:18,495 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 06:35:30,216 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 06:36:46,651 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 06:38:44,003 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:40:03,649 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:41:10,631 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:41:47,632 - MainProcess - ERROR - Final retry failed for batch
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new-main/.venv/lib/python3.9/site-packages/aiohttp/client_reqrep.py", line 1059, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "/Users/mac-wade/Desktop/new-main/.venv/lib/python3.9/site-packages/aiohttp/streams.py", line 672, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 115, in _process_batch
+    return await self._send_batch(session, batch)
+  File "/Users/mac-wade/Desktop/new-main/src/services/logs_sender.py", line 144, in _send_batch
+    async with session.post(
+  File "/Users/mac-wade/Desktop/new-main/.venv/lib/python3.9/site-packages/aiohttp/client.py", line 1425, in __aenter__
+    self._resp: _RetType = await self._coro
+  File "/Users/mac-wade/Desktop/new-main/.venv/lib/python3.9/site-packages/aiohttp/client.py", line 730, in _request
+    await resp.start(conn)
+  File "/Users/mac-wade/Desktop/new-main/.venv/lib/python3.9/site-packages/aiohttp/client_reqrep.py", line 1074, in start
+    self._continue = None
+  File "/Users/mac-wade/Desktop/new-main/.venv/lib/python3.9/site-packages/aiohttp/helpers.py", line 685, in __exit__
+    raise asyncio.TimeoutError from exc_val
+asyncio.exceptions.TimeoutError
+2025-03-19 06:42:04,618 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:42:21,053 - MainProcess - WARNING - SSL certificate verification is DISABLED
+2025-03-19 06:42:23,131 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:42:30,773 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:42:38,990 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:42:47,970 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:42:55,326 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:43:02,339 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:43:09,404 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:43:16,186 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:43:23,922 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:43:30,209 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:43:40,024 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:43:48,116 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:43:54,577 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:44:02,684 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:44:11,030 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:44:19,623 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:44:27,328 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:44:36,533 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:44:43,373 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:44:52,486 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:44:59,935 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:45:05,809 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:45:14,971 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:45:22,683 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:45:29,525 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:45:34,670 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:45:43,261 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:45:52,603 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:46:01,434 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:46:08,929 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:46:17,204 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:46:26,420 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:46:35,314 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:46:43,102 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:46:50,753 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:47:00,101 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:47:07,209 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:47:13,979 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:47:21,781 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:47:30,790 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:47:38,456 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:47:45,882 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:47:52,975 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:48:02,646 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:48:09,647 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:48:19,362 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:48:28,263 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:48:35,593 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:48:43,570 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:48:55,384 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:49:03,129 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:49:11,055 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:49:19,456 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:49:27,917 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:49:36,666 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:49:42,124 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:49:49,611 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:49:57,110 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:50:06,154 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:50:14,866 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:50:22,078 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:50:33,521 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:50:42,112 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:50:49,913 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:50:57,784 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:51:06,645 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:51:13,798 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:51:20,999 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:51:28,917 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:51:36,530 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:51:44,878 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:51:53,320 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:52:02,103 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:52:09,708 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:52:17,404 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:52:24,432 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:52:32,809 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:52:41,149 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:52:49,902 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:52:57,013 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:53:05,700 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:53:14,325 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:53:23,107 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:53:31,372 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:53:38,873 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:53:44,500 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:53:51,652 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:53:59,908 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:54:08,787 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:54:16,797 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:54:25,244 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:54:31,242 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:54:39,412 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:54:46,591 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:54:53,870 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:55:00,927 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:55:08,866 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:55:17,046 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:55:25,002 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:55:33,345 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:55:42,665 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:55:50,560 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:55:59,268 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:56:08,206 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:56:15,889 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:56:22,404 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:56:30,434 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:56:39,709 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:56:47,570 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:56:56,720 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:57:03,714 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:57:10,858 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:57:19,400 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:57:30,190 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:57:36,250 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:57:44,047 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:57:54,253 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:58:01,985 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:58:07,992 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:58:16,660 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:58:25,467 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:58:34,057 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:58:40,998 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:58:48,449 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:58:56,669 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:59:04,183 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:59:12,489 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:59:21,861 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:59:32,160 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:59:40,379 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:59:50,070 - MainProcess - INFO - Batch successfully sent
+2025-03-19 06:59:59,435 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:00:05,832 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:00:14,971 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:00:22,604 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:00:30,275 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:00:38,087 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:00:48,015 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:00:52,439 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:01:02,136 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:01:09,698 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:01:17,374 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:01:26,222 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:01:34,214 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:01:43,902 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:01:51,177 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:01:59,438 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:02:07,926 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:02:15,123 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:02:24,843 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:02:30,788 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:02:35,412 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:02:42,705 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:02:50,602 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:02:57,132 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:03:04,097 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:03:11,368 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:03:20,837 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:03:27,973 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:03:36,721 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:03:44,214 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:03:50,871 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:03:59,415 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:04:04,617 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:04:11,765 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:04:20,509 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:04:27,462 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:04:38,255 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:04:47,568 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:04:55,980 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:05:07,252 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:05:16,364 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:05:24,036 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:05:30,070 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:05:38,381 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:05:44,478 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:05:52,221 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:05:59,122 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:06:06,816 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:06:14,113 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:06:22,343 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:06:29,462 - MainProcess - INFO - Batch successfully sent
+2025-03-19 07:07:06,642 - PartitionProcess-1 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:07:07,174 - PartitionProcess-2 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:09:39,311 - PartitionProcess-1 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:09:39,820 - PartitionProcess-2 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:10:04,720 - PartitionProcess-1 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:10:05,252 - PartitionProcess-2 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:19:20,474 - PartitionProcess-1 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:19:21,006 - PartitionProcess-2 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:19:49,469 - PartitionProcess-1 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:19:50,009 - PartitionProcess-2 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:21:00,055 - PartitionProcess-1 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:21:00,571 - PartitionProcess-2 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:21:36,480 - PartitionProcess-2 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:21:36,480 - PartitionProcess-1 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:21:43,220 - PartitionProcess-2 - INFO - Batch successfully sent
+2025-03-19 07:21:43,220 - PartitionProcess-1 - INFO - Batch successfully sent
+2025-03-19 07:30:50,409 - PartitionProcess-1 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:30:50,410 - PartitionProcess-2 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:30:57,714 - PartitionProcess-2 - INFO - Batch successfully sent
+2025-03-19 07:30:57,745 - PartitionProcess-1 - INFO - Batch successfully sent
+2025-03-19 07:31:03,648 - PartitionProcess-2 - INFO - Batch successfully sent
+2025-03-19 07:31:03,702 - PartitionProcess-1 - INFO - Batch successfully sent
+2025-03-19 07:41:04,161 - PartitionProcess-2 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:41:04,161 - PartitionProcess-1 - WARNING - SSL certificate verification is DISABLED
+2025-03-19 07:41:08,143 - PartitionProcess-2 - INFO - Batch successfully sent
+2025-03-19 07:41:08,143 - PartitionProcess-1 - INFO - Batch successfully sent
